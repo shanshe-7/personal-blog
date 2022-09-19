@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: var(--size-8);
+  padding-right: var(--size-8);
+  padding-top: var(--size-3);
+  padding-bottom: var(--size-3);
+  background-color: var(--teal-6);
+}
+
+.name {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-4);
+  color: white;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links > li {
+  padding: var(--size-4);
+  list-style-type: none;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-2);
+}
+
+.links > li::before {
+  content: "\200B";
+}
+
+.links > li > a {
+  border: var(--border-size-1) solid var(--red-0);
+  color: var(--gray-9);
+  padding: var(--size-2) var(--size-3);
+  border-radius: var(--radius-2);
+  background-color: var(--green-0);
+}
+
+.links > li > a:visited {
+  color: var(--gray-6);
+}
+
+.links > li > a:hover {
+  background-color: var(--green-1);
+  color: var(--gray-9);
+}
