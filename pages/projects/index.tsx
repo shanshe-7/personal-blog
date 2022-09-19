@@ -3,8 +3,8 @@ import { getProjects } from "helpers/getProjects";
 type Project = {
   fields: {
     name: string;
+    id: number;
   };
-  id: number;
 };
 
 type Projects = {
@@ -12,10 +12,11 @@ type Projects = {
 };
 
 export default function Projects({ projects }: Projects) {
+  console.log(projects);
   return (
     <>
       {projects?.map((project) => {
-        return <div key={project.id}>{project?.fields?.name}</div>;
+        return <div key={project.fields.id}>{project?.fields?.name}</div>;
       })}
     </>
   );
