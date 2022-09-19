@@ -12,7 +12,6 @@ type Projects = {
 };
 
 export default function Projects({ projects }: Projects) {
-  console.log(projects);
   return (
     <>
       {projects?.map((project) => {
